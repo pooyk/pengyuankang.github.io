@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /home/
+Allow: /intro/
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+
+Sitemap: https://pengyuankang.github.io/sitemap.xml
+Sitemap: https://pengyuankang.github.io/baidusitemap.xml
