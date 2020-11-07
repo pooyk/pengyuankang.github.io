@@ -9,13 +9,6 @@
   </url>
   
   <url>
-    <loc>https://pengyuankang.github.io/post/hello-world/</loc>
-    
-    <lastmod>2020-11-07</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://pengyuankang.github.io/intro/index.html</loc>
     
     <lastmod>2020-11-07</lastmod>
@@ -46,14 +39,14 @@
 
   
   <url>
-    <loc>https://pengyuankang.github.io/tags/demo/</loc>
+    <loc>https://pengyuankang.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2020-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://pengyuankang.github.io/tags/tag2/</loc>
+    <loc>https://pengyuankang.github.io/tags/Java/</loc>
     <lastmod>2020-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -62,21 +55,7 @@
 
   
   <url>
-    <loc>https://pengyuankang.github.io/categories/demo/</loc>
-    <lastmod>2020-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pengyuankang.github.io/categories/demo/dd/</loc>
-    <lastmod>2020-11-07</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://pengyuankang.github.io/categories/demo/dd/demo/</loc>
+    <loc>https://pengyuankang.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2020-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
