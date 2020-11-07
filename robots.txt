@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /post/
 Allow: /home/
 Allow: /intro/
 Allow: /archives/

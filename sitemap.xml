@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pengyuankang.github.io/google4fb62574a0362ec7.html</loc>
+    
+    <lastmod>2020-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://pengyuankang.github.io/post/demo/</loc>
+    
+    <lastmod>2020-11-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://pengyuankang.github.io/post/hello-world/</loc>
     
     <lastmod>2020-11-07</lastmod>
@@ -17,13 +31,6 @@
   
   <url>
     <loc>https://pengyuankang.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-11-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://pengyuankang.github.io/post/demo/</loc>
     
     <lastmod>2020-11-07</lastmod>
     
@@ -70,6 +77,13 @@
   
   <url>
     <loc>https://pengyuankang.github.io/categories/demo/dd/</loc>
+    <lastmod>2020-11-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://pengyuankang.github.io/categories/demo/dd/demo/</loc>
     <lastmod>2020-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
