@@ -18,7 +18,7 @@
          TagCanvas.textColour = '#c66f35';
          TagCanvas.textHeight = 20;
          TagCanvas.outlineColour = '#E2E1D1';
-         TagCanvas.maxSpeed = 0.15;
+         TagCanvas.maxSpeed = 0.1;
          TagCanvas.freezeActive = false;
          TagCanvas.outlineMethod = 'block';
          TagCanvas.minBrightness = 0.2;

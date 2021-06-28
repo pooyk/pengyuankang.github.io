@@ -48,4 +48,50 @@
         <tag>Scrapy</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Spring Security</title>
+    <url>//post/spring-security/</url>
+    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Spring Security是一个强大且高度可定制的认证和访问控制框架。它是保护基于Spring的应用程序的事实标准。</p>
+<span id="more"></span>
+
+<p>Spring Security是一个专注于为Java应用提供认证和授权的框架。像所有的Spring项目一样，Spring Security的真正强大之处在于它可以很容易地被扩展以满足客户的要求。</p>
+<h1 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h1><ul>
+<li><a href="https://spring.io/guides/gs/securing-web/">官方快速入门</a></li>
+</ul>
+<h1 id="使用篇"><a href="#使用篇" class="headerlink" title="使用篇"></a>使用篇</h1><ol>
+<li>环境搭建</li>
+<li>Spring Security 基础</li>
+</ol>
+<h1 id="开发篇"><a href="#开发篇" class="headerlink" title="开发篇"></a>开发篇</h1><ol>
+<li>密码的进化和验证</li>
+<li>深入 Spring Security 认证</li>
+<li>构建基于 JWT 的认证</li>
+<li>基于角色的用户权限</li>
+<li>基于数据库的 RBAC</li>
+<li>实现符合 OAuth 2 标准的授权服务器</li>
+<li>Spring Security 更多了解</li>
+</ol>
+<h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><ul>
+<li><a href="https://docs.spring.io/spring-security/site/docs/current/reference/html5/">官方参考文档</a></li>
+<li><a href="https://docs.spring.io/spring-security/site/docs/current/api/">官方 API 文档</a></li>
+</ul>
+<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><ul>
+<li>略</li>
+</ul>
+<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><ul>
+<li>名词解释</li>
+<li>最佳实践</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Spring</category>
+        <category>Spring Security</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+        <tag>Spring Security</tag>
+        <tag>Theme Page</tag>
+        <tag>Security</tag>
+      </tags>
+  </entry>
 </search>
