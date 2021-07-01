@@ -145,134 +145,6 @@ x(n-1)
       </tags>
   </entry>
   <entry>
-    <title>重构</title>
-    <url>//post/refactoring/</url>
-    <content><![CDATA[<h1 id="简介">简介</h1>
-<p>重构(名词)对软件内部结构的一种调整,目的是在不改变软件可观察行为的前提下,提高其可理解性,降低其修改成本。</p>
-<p>重构(动词)使用一系列重构手法,在不改变软件可观察行为的前提下,调整其结构。</p>
-<a id="more"></a>
-<h1 id="代码的坏味道">代码的坏味道</h1>
-<ol type="1">
-<li>Duplicated Code 重复的代码</li>
-<li>Long Method 过长函数</li>
-<li>Large Class 过大的类</li>
-<li>Long Parameter List 过长参数列</li>
-<li>Divergent Change 发散式变化</li>
-<li>Shotgun Surgery 霰弹式修改</li>
-<li>Feature Envy 依恋情结</li>
-<li>Data Clumps 数据泥团</li>
-<li>Primitive Obsession 基本类型偏执</li>
-<li>Switch Statements switch语句</li>
-<li>Parallel Inheritance Hierarchies 平行继承体系</li>
-<li>Lazy Class 冗赘类</li>
-<li>Speculative Generality 夸夸其谈未来性</li>
-<li>Temporary Field 令人迷惑的暂时字段</li>
-<li>Message Chains 过度耦合的消息链</li>
-<li>Middle Man 中间人</li>
-<li>Inappropriate Intimacy 狎昵关系</li>
-<li>Alternative Classes with Different Interfaces 异曲同工的类</li>
-<li>Incomplete Library Class 不完美的库类</li>
-<li>Data Class 纯稚的数据类</li>
-<li>Refused Bequest 被拒绝的遗赠</li>
-<li>Comments 过多的注释</li>
-</ol>
-<h1 id="重构列表">重构列表</h1>
-<h2 id="重新组织函数">重新组织函数</h2>
-<ol type="1">
-<li>Extract Method 提炼函数</li>
-<li>Inline Method 内联函数</li>
-<li>Inline Temp 内联临时变量</li>
-<li>Replace Temp with Query 以查询取代临时变量</li>
-<li>Introduce Explaining Variable 引入解释性变量</li>
-<li>Split Temporary Variable 分解临时变量</li>
-<li>Remove Assignments to Parameters 移除对参数的赋值</li>
-<li>Replace Method with Method Object 以函数对象取代函数</li>
-<li>Substitute Algorithm 替换算法</li>
-</ol>
-<h2 id="在对象之间搬移特性">在对象之间搬移特性</h2>
-<ol type="1">
-<li>Move Method 搬移函数</li>
-<li>Move Field 搬移字段</li>
-<li>Extract Class 提炼类</li>
-<li>Inline Class 将类内联化</li>
-<li>Hide Delegate 隐藏委托关系</li>
-<li>Remove Middle Man 移除中间人</li>
-<li>Introduce Foreign Method 引入外加函数</li>
-<li>Introduce Local Extension 引入本地扩展</li>
-</ol>
-<h2 id="重新组织数据">重新组织数据</h2>
-<ol type="1">
-<li>Self Encapsulate Field 自封装字段</li>
-<li>Replace Data Value with Object 以对象取代数据值</li>
-<li>Change Value to Reference 将值对象改为引用对象</li>
-<li>Change Reference to Value 将引用对象改为值对象</li>
-<li>Replace Array with Object 以对象取代数组</li>
-<li>Duplicate Observed Data 复制被监视数据</li>
-<li>Change Unidirectional Association to Bidirectional 将单向关联改为双向关联</li>
-<li>Change Bidirectional Association to Unidirectional 将双向关联改为单向关联</li>
-<li>Replace Magic Number with Symbolic Constant 以字面常量取代魔法数</li>
-<li>Encapsulate Field 封装字段</li>
-<li>Encapsulate Collection 封装集合</li>
-<li>Replace Record with Data Class 以数据类取代记录</li>
-<li>Replace Type Code with Class 以类取代类型码</li>
-<li>Replace Type Code with Subclasses 以子类取代类型码</li>
-<li>Replace Type Code with State/Strategy 以 State/ Strategy取代类型码</li>
-<li>Replace Subclass with Fields 以字段取代子类</li>
-</ol>
-<h2 id="简化条件表达式">简化条件表达式</h2>
-<ol type="1">
-<li>Decompose Conditional 分解条件表达式</li>
-<li>Consolidate Conditional Expression 合并条件表达式</li>
-<li>Consolidate Duplicate Conditional Fragments 合并重复的条件片段</li>
-<li>Remove Control Flag 移除控制标记</li>
-<li>Replace Nested Conditional with Guard Clauses 以卫语句取代嵌套条件表达式</li>
-<li>Replace Conditional with Polymorphism 以多态取代条件表达式</li>
-<li>Introduce Null Object 引入Null对象</li>
-<li>Introduce Assertion 引入断言</li>
-</ol>
-<h2 id="简化函数调用">简化函数调用</h2>
-<ol type="1">
-<li>Rename Method 函数改名</li>
-<li>Add Parameter 添加参数</li>
-<li>Remove Parameter 移除参数</li>
-<li>Separate Query from Modifier 将查询函数和修改函数分离</li>
-<li>Parameterize Method 令函数携带参数</li>
-<li>Replace Parameter with Explicit Methods 以明确函数取代参数</li>
-<li>Preserve Whole Object 保持对象完整</li>
-<li>Replace Parameter with Methods 以函数取代参数</li>
-<li>Introduce Parameter Object 引入参数对象</li>
-<li>Remove Setting Method 移除设值函数</li>
-<li>Hide Method 隐藏函数</li>
-<li>Replace Constructor with Factory Method 以工厂函数取代构造函数</li>
-<li>Encapsulate Downcast 封装向下转型</li>
-<li>Replace Error Code with Exception 以异常取代错误码</li>
-<li>Replace Exception with Test以测试取代异常</li>
-</ol>
-<h2 id="处理泛化关系">处理泛化关系</h2>
-<ol type="1">
-<li>Pull Up Field 字段上移</li>
-<li>Pull Up Method 函数上移</li>
-<li>Pull Up Constructor Body 构造函数本体上移</li>
-<li>Push Down Method 函数下移</li>
-<li>Push Down Field 字段下移</li>
-<li>Extract Subclass 提炼子类</li>
-<li>Extract Superclass 提炼超类</li>
-<li>Extract Interface 提炼接口</li>
-<li>Collapse Hierarchy 折叠继承体系</li>
-<li>Form Template Method 塑造模板函数</li>
-<li>Replace Inheritance with Delegation 以委托取代继承</li>
-<li>Replace Delegation with Inheritance 以继承取代委托</li>
-</ol>
-]]></content>
-      <categories>
-        <category>重构</category>
-      </categories>
-      <tags>
-        <tag>重构</tag>
-        <tag>Theme Page</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JMeter</title>
     <url>//post/jmeter/</url>
     <content><![CDATA[<h1 id="简介">简介</h1>
@@ -409,9 +281,137 @@ x(n-1)
       </categories>
       <tags>
         <tag>Spring</tag>
-        <tag>Theme Page</tag>
         <tag>Spring Security</tag>
+        <tag>Theme Page</tag>
         <tag>Security</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>重构</title>
+    <url>//post/refactoring/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p>重构(名词)对软件内部结构的一种调整,目的是在不改变软件可观察行为的前提下,提高其可理解性,降低其修改成本。</p>
+<p>重构(动词)使用一系列重构手法,在不改变软件可观察行为的前提下,调整其结构。</p>
+<a id="more"></a>
+<h1 id="代码的坏味道">代码的坏味道</h1>
+<ol type="1">
+<li>Duplicated Code 重复的代码</li>
+<li>Long Method 过长函数</li>
+<li>Large Class 过大的类</li>
+<li>Long Parameter List 过长参数列</li>
+<li>Divergent Change 发散式变化</li>
+<li>Shotgun Surgery 霰弹式修改</li>
+<li>Feature Envy 依恋情结</li>
+<li>Data Clumps 数据泥团</li>
+<li>Primitive Obsession 基本类型偏执</li>
+<li>Switch Statements switch语句</li>
+<li>Parallel Inheritance Hierarchies 平行继承体系</li>
+<li>Lazy Class 冗赘类</li>
+<li>Speculative Generality 夸夸其谈未来性</li>
+<li>Temporary Field 令人迷惑的暂时字段</li>
+<li>Message Chains 过度耦合的消息链</li>
+<li>Middle Man 中间人</li>
+<li>Inappropriate Intimacy 狎昵关系</li>
+<li>Alternative Classes with Different Interfaces 异曲同工的类</li>
+<li>Incomplete Library Class 不完美的库类</li>
+<li>Data Class 纯稚的数据类</li>
+<li>Refused Bequest 被拒绝的遗赠</li>
+<li>Comments 过多的注释</li>
+</ol>
+<h1 id="重构列表">重构列表</h1>
+<h2 id="重新组织函数">重新组织函数</h2>
+<ol type="1">
+<li>Extract Method 提炼函数</li>
+<li>Inline Method 内联函数</li>
+<li>Inline Temp 内联临时变量</li>
+<li>Replace Temp with Query 以查询取代临时变量</li>
+<li>Introduce Explaining Variable 引入解释性变量</li>
+<li>Split Temporary Variable 分解临时变量</li>
+<li>Remove Assignments to Parameters 移除对参数的赋值</li>
+<li>Replace Method with Method Object 以函数对象取代函数</li>
+<li>Substitute Algorithm 替换算法</li>
+</ol>
+<h2 id="在对象之间搬移特性">在对象之间搬移特性</h2>
+<ol type="1">
+<li>Move Method 搬移函数</li>
+<li>Move Field 搬移字段</li>
+<li>Extract Class 提炼类</li>
+<li>Inline Class 将类内联化</li>
+<li>Hide Delegate 隐藏委托关系</li>
+<li>Remove Middle Man 移除中间人</li>
+<li>Introduce Foreign Method 引入外加函数</li>
+<li>Introduce Local Extension 引入本地扩展</li>
+</ol>
+<h2 id="重新组织数据">重新组织数据</h2>
+<ol type="1">
+<li>Self Encapsulate Field 自封装字段</li>
+<li>Replace Data Value with Object 以对象取代数据值</li>
+<li>Change Value to Reference 将值对象改为引用对象</li>
+<li>Change Reference to Value 将引用对象改为值对象</li>
+<li>Replace Array with Object 以对象取代数组</li>
+<li>Duplicate Observed Data 复制被监视数据</li>
+<li>Change Unidirectional Association to Bidirectional 将单向关联改为双向关联</li>
+<li>Change Bidirectional Association to Unidirectional 将双向关联改为单向关联</li>
+<li>Replace Magic Number with Symbolic Constant 以字面常量取代魔法数</li>
+<li>Encapsulate Field 封装字段</li>
+<li>Encapsulate Collection 封装集合</li>
+<li>Replace Record with Data Class 以数据类取代记录</li>
+<li>Replace Type Code with Class 以类取代类型码</li>
+<li>Replace Type Code with Subclasses 以子类取代类型码</li>
+<li>Replace Type Code with State/Strategy 以 State/ Strategy取代类型码</li>
+<li>Replace Subclass with Fields 以字段取代子类</li>
+</ol>
+<h2 id="简化条件表达式">简化条件表达式</h2>
+<ol type="1">
+<li>Decompose Conditional 分解条件表达式</li>
+<li>Consolidate Conditional Expression 合并条件表达式</li>
+<li>Consolidate Duplicate Conditional Fragments 合并重复的条件片段</li>
+<li>Remove Control Flag 移除控制标记</li>
+<li>Replace Nested Conditional with Guard Clauses 以卫语句取代嵌套条件表达式</li>
+<li>Replace Conditional with Polymorphism 以多态取代条件表达式</li>
+<li>Introduce Null Object 引入Null对象</li>
+<li>Introduce Assertion 引入断言</li>
+</ol>
+<h2 id="简化函数调用">简化函数调用</h2>
+<ol type="1">
+<li>Rename Method 函数改名</li>
+<li>Add Parameter 添加参数</li>
+<li>Remove Parameter 移除参数</li>
+<li>Separate Query from Modifier 将查询函数和修改函数分离</li>
+<li>Parameterize Method 令函数携带参数</li>
+<li>Replace Parameter with Explicit Methods 以明确函数取代参数</li>
+<li>Preserve Whole Object 保持对象完整</li>
+<li>Replace Parameter with Methods 以函数取代参数</li>
+<li>Introduce Parameter Object 引入参数对象</li>
+<li>Remove Setting Method 移除设值函数</li>
+<li>Hide Method 隐藏函数</li>
+<li>Replace Constructor with Factory Method 以工厂函数取代构造函数</li>
+<li>Encapsulate Downcast 封装向下转型</li>
+<li>Replace Error Code with Exception 以异常取代错误码</li>
+<li>Replace Exception with Test以测试取代异常</li>
+</ol>
+<h2 id="处理泛化关系">处理泛化关系</h2>
+<ol type="1">
+<li>Pull Up Field 字段上移</li>
+<li>Pull Up Method 函数上移</li>
+<li>Pull Up Constructor Body 构造函数本体上移</li>
+<li>Push Down Method 函数下移</li>
+<li>Push Down Field 字段下移</li>
+<li>Extract Subclass 提炼子类</li>
+<li>Extract Superclass 提炼超类</li>
+<li>Extract Interface 提炼接口</li>
+<li>Collapse Hierarchy 折叠继承体系</li>
+<li>Form Template Method 塑造模板函数</li>
+<li>Replace Inheritance with Delegation 以委托取代继承</li>
+<li>Replace Delegation with Inheritance 以继承取代委托</li>
+</ol>
+]]></content>
+      <categories>
+        <category>重构</category>
+      </categories>
+      <tags>
+        <tag>重构</tag>
+        <tag>Theme Page</tag>
       </tags>
   </entry>
 </search>
