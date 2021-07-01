@@ -1,33 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Demo</title>
+    <title>格式验证页</title>
     <url>//post/demo/</url>
-    <content><![CDATA[<h1 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h1><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
-</blockquote>
+    <content><![CDATA[<p>格式验证页</p>
 <a id="more"></a>
+<h1 id="hexo">Hexo</h1>
+<h2 id="引用块">引用块</h2>
+<p>在文章中插入引言，可包含作者、来源和标题。</p>
+<p><strong>没有提供参数，则只输出普通的 blockquote</strong></p>
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+<p><strong>引用书上的句子</strong></p>
 <blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
 <footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-
-<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io/">http://devdocs.io</a></p>
+<p><strong>引用 Twitter</strong></p>
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. http://devdocs.io</p>
 <footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
-
+<p><strong>引用网络上的文章</strong></p>
 <blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
 <footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote>
-
-<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight isbl"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">&#x27;Hello World!&#x27;</span>);</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="代码块">代码块</h2>
+<p>在文章中插入代码。</p>
+<p><strong>普通的代码块</strong></p>
+<figure class="highlight isbl"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">&#x27;Hello World!&#x27;</span>);</span></span><br></pre></td></tr></table></figure>
+<p><strong>指定语言</strong></p>
 <figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
-
+<p><strong>附加说明</strong></p>
 <figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</span><br></pre></td></tr></table></figure>
-
+<p><strong>附加说明和网址</strong></p>
 <figure class="highlight excel"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="code"><pre><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, &#x27;&#x27;, <span class="number">3</span>]);</span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-
+<p><strong>反引号代码块</strong></p>
 <p><code>[language] [title] [url] [link text] code snippet</code></p>
-<h1 id="Pull-Quote"><a href="#Pull-Quote" class="headerlink" title="Pull Quote"></a>Pull Quote</h1><blockquote class="pullquote [class]"><p>content</p>
+<h2 id="pull-quote">Pull Quote</h2>
+<ul>
+<li><div class="line-block">primary | success | info | warning |</div></li>
+</ul>
+<blockquote class="pullquote warning"><p>content</p>
 </blockquote>
-
-<h1 id="Include-Code"><a href="#Include-Code" class="headerlink" title="Include Code"></a>Include Code</h1><figure class="highlight java"><figcaption><span>ClaimAccessor.java</span><a href="/downloads/code/ClaimAccessor.java">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">default</span> String <span class="title">getClaimAsString</span><span class="params">(String claim)</span> </span>{</span><br><span class="line">		<span class="keyword">if</span> (!<span class="keyword">this</span>.containsClaim(claim)) {</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">		}</span><br><span class="line">		Object claimValue = <span class="keyword">this</span>.getClaims().get(claim);</span><br><span class="line">		<span class="keyword">return</span> (claimValue != <span class="keyword">null</span> ? claimValue.toString() : <span class="keyword">null</span>);</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="include-code">Include Code</h2>
+<figure class="highlight java"><figcaption><span>ClaimAccessor.java</span><a href="/downloads/code/ClaimAccessor.java">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">default</span> String <span class="title">getClaimAsString</span><span class="params">(String claim)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">this</span>.containsClaim(claim)) {</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    }</span><br><span class="line">    Object claimValue = <span class="keyword">this</span>.getClaims().get(claim);</span><br><span class="line">    <span class="keyword">return</span> (claimValue != <span class="keyword">null</span> ? claimValue.toString() : <span class="keyword">null</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="next"><a href="https://theme-next.js.org/docs/">Next</a></h1>
+<ul>
+<li>ab</li>
+</ul>
+<div class="tabs" id="first-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#first-unique-name-1">First unique name 1</a></li><li class="tab"><a href="#first-unique-name-2">First unique name 2</a></li><li class="tab"><a href="#first-unique-name-3">First unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
+<h1 id="latex-math">LaTex Math</h1>
+<h2 id="内联与块状">内联与块状</h2>
+<ul>
+<li>内联</li>
+</ul>
+<p>函数式：<span class="math inline">\(f(x)=\frac{P(x)}{Q(x)}\)</span></p>
+<ul>
+<li>块状</li>
+</ul>
+<p><span class="math display">\[
+f(x)=\frac{P(x)}{Q(x)}
+\]</span></p>
+<h2 id="latex-math的基本语法">LaTex Math的基本语法</h2>
+<ul>
+<li><p>希腊字母 <span class="math inline">\(\Gamma\)</span> <span class="math inline">\(\iota\)</span> <span class="math inline">\(\sigma\)</span> <span class="math inline">\(\phi\)</span> <span class="math inline">\(\upsilon\)</span> <span class="math inline">\(\Pi\)</span> <span class="math inline">\(\Bbbk\)</span> <span class="math inline">\(\heartsuit\)</span> <span class="math inline">\(\int\)</span> <span class="math inline">\(\oint\)</span></p></li>
+<li><p>三角函数 <span class="math inline">\(\tan\)</span> <span class="math inline">\(\sin\)</span> <span class="math inline">\(\cos\)</span></p></li>
+<li><p>运算符 <span class="math inline">\(+\)</span><span class="math inline">\(-\)</span><span class="math inline">\(=\)</span><span class="math inline">\(&gt;\)</span><span class="math inline">\(&lt;\)</span><span class="math inline">\(\times\)</span><span class="math inline">\(\div\)</span><span class="math inline">\(\equiv\)</span><span class="math inline">\(\leq\)</span><span class="math inline">\(\geq\)</span><span class="math inline">\(\neq\)</span></p></li>
+<li><p>集合符号</p>
+<p><span class="math inline">\(\cup\)</span> <span class="math inline">\(\cap\)</span> <span class="math inline">\(\in\)</span> <span class="math inline">\(\notin\)</span> <span class="math inline">\(\ni\)</span> <span class="math inline">\(\subset\)</span> <span class="math inline">\(\subseteq\)</span> <span class="math inline">\(\supset\)</span> <span class="math inline">\(\supseteq\)</span> <span class="math inline">\(\infty\)</span></p></li>
+<li><p>指数输出</p>
+<p><span class="math inline">\(x^3+x^9\)</span> <span class="math inline">\(x^y\)</span></p></li>
+<li><p>n次方根输出</p>
+<p><span class="math inline">\(\sqrt{3x-1}+\sqrt[5]{2y^5-4}\)</span></p></li>
+<li><p>输出分数 <span class="math display">\[
+\frac{x}{2y} +\frac{x-y}{x+y}
+\]</span></p></li>
+<li><p>累加求和输出 <span class="math display">\[
+\sum_{n=1}^\infty k
+\]</span></p></li>
+<li><p>极限的输出 <span class="math display">\[
+\lim\limits_{x \to \infty} \exp(-x) = 0
+\]</span></p></li>
+<li><p>输出矩阵 <span class="math display">\[
+\begin{matrix}
+   1 &amp; 2 &amp; 3 \\
+   4 &amp; 5 &amp; 6 \\
+   7 &amp; 8 &amp; 9
+  \end{matrix}
+\]</span></p></li>
+</ul>
+<h2 id="复杂数学公式">复杂数学公式</h2>
+<ul>
+<li><p>多行等式 <span class="math display">\[
+\begin{equation} \label{eq2}
+\begin{aligned}
+a &amp;= b + c \\
+  &amp;= d + e + f + g \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}
+\]</span></p></li>
+<li><p>多行方程 <span class="math display">\[
+\begin{align}
+-4 + 5x &amp;= 2 + y \nonumber \\
+w + 2 &amp;= -1 + w \\
+ab &amp;= cb
+\end{align}
+\]</span></p></li>
+<li><p>分段函数的编写 <span class="math display">\[
+X(m,n)=
+\begin{cases}
+x(n), \\
+x(n-1) \\
+x(n-1)
+\end{cases}
+\]</span></p></li>
+<li><p>全微分等式 <span class="math display">\[
+\frac{\partial u}{\partial t}
+= h^2 \left( \frac{\partial^2 u}{\partial x^2} +
+\frac{\partial^2 u}{\partial y^2} +
+\frac{\partial^2 u}{\partial z^2}\right)
+\tag{i}
+\]</span></p></li>
+</ul>
+<h1 id="markdown">Markdown</h1>
+<ul>
+<li>折叠</li>
+</ul>
+]]></content>
       <categories>
         <category>Demo</category>
       </categories>
@@ -51,11 +147,12 @@
   <entry>
     <title>重构</title>
     <url>//post/refactoring/</url>
-    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>重构(名词)对软件内部结构的一种调整,目的是在不改变软件可观察行为的前提下,提高其可理解性,降低其修改成本。</p>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p>重构(名词)对软件内部结构的一种调整,目的是在不改变软件可观察行为的前提下,提高其可理解性,降低其修改成本。</p>
 <p>重构(动词)使用一系列重构手法,在不改变软件可观察行为的前提下,调整其结构。</p>
 <a id="more"></a>
-
-<h1 id="代码的坏味道"><a href="#代码的坏味道" class="headerlink" title="代码的坏味道"></a>代码的坏味道</h1><ol>
+<h1 id="代码的坏味道">代码的坏味道</h1>
+<ol type="1">
 <li>Duplicated Code 重复的代码</li>
 <li>Long Method 过长函数</li>
 <li>Large Class 过大的类</li>
@@ -79,7 +176,9 @@
 <li>Refused Bequest 被拒绝的遗赠</li>
 <li>Comments 过多的注释</li>
 </ol>
-<h1 id="重构列表"><a href="#重构列表" class="headerlink" title="重构列表"></a>重构列表</h1><h2 id="重新组织函数"><a href="#重新组织函数" class="headerlink" title="重新组织函数"></a>重新组织函数</h2><ol>
+<h1 id="重构列表">重构列表</h1>
+<h2 id="重新组织函数">重新组织函数</h2>
+<ol type="1">
 <li>Extract Method 提炼函数</li>
 <li>Inline Method 内联函数</li>
 <li>Inline Temp 内联临时变量</li>
@@ -90,7 +189,8 @@
 <li>Replace Method with Method Object 以函数对象取代函数</li>
 <li>Substitute Algorithm 替换算法</li>
 </ol>
-<h2 id="在对象之间搬移特性"><a href="#在对象之间搬移特性" class="headerlink" title="在对象之间搬移特性"></a>在对象之间搬移特性</h2><ol>
+<h2 id="在对象之间搬移特性">在对象之间搬移特性</h2>
+<ol type="1">
 <li>Move Method 搬移函数</li>
 <li>Move Field 搬移字段</li>
 <li>Extract Class 提炼类</li>
@@ -100,7 +200,8 @@
 <li>Introduce Foreign Method 引入外加函数</li>
 <li>Introduce Local Extension 引入本地扩展</li>
 </ol>
-<h2 id="重新组织数据"><a href="#重新组织数据" class="headerlink" title="重新组织数据"></a>重新组织数据</h2><ol>
+<h2 id="重新组织数据">重新组织数据</h2>
+<ol type="1">
 <li>Self Encapsulate Field 自封装字段</li>
 <li>Replace Data Value with Object 以对象取代数据值</li>
 <li>Change Value to Reference 将值对象改为引用对象</li>
@@ -118,7 +219,8 @@
 <li>Replace Type Code with State/Strategy 以 State/ Strategy取代类型码</li>
 <li>Replace Subclass with Fields 以字段取代子类</li>
 </ol>
-<h2 id="简化条件表达式"><a href="#简化条件表达式" class="headerlink" title="简化条件表达式"></a>简化条件表达式</h2><ol>
+<h2 id="简化条件表达式">简化条件表达式</h2>
+<ol type="1">
 <li>Decompose Conditional 分解条件表达式</li>
 <li>Consolidate Conditional Expression 合并条件表达式</li>
 <li>Consolidate Duplicate Conditional Fragments 合并重复的条件片段</li>
@@ -128,7 +230,8 @@
 <li>Introduce Null Object 引入Null对象</li>
 <li>Introduce Assertion 引入断言</li>
 </ol>
-<h2 id="简化函数调用"><a href="#简化函数调用" class="headerlink" title="简化函数调用"></a>简化函数调用</h2><ol>
+<h2 id="简化函数调用">简化函数调用</h2>
+<ol type="1">
 <li>Rename Method 函数改名</li>
 <li>Add Parameter 添加参数</li>
 <li>Remove Parameter 移除参数</li>
@@ -145,7 +248,8 @@
 <li>Replace Error Code with Exception 以异常取代错误码</li>
 <li>Replace Exception with Test以测试取代异常</li>
 </ol>
-<h2 id="处理泛化关系"><a href="#处理泛化关系" class="headerlink" title="处理泛化关系"></a>处理泛化关系</h2><ol>
+<h2 id="处理泛化关系">处理泛化关系</h2>
+<ol type="1">
 <li>Pull Up Field 字段上移</li>
 <li>Pull Up Method 函数上移</li>
 <li>Pull Up Constructor Body 构造函数本体上移</li>
@@ -169,20 +273,113 @@
       </tags>
   </entry>
   <entry>
+    <title>JMeter</title>
+    <url>//post/jmeter/</url>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p>Apache JMeter是Apache组织开发的基于Java的压力测试工具。</p>
+<a id="more"></a>
+<h1 id="脚本编写">脚本编写</h1>
+<h2 id="添加线程组">添加线程组</h2>
+<ul>
+<li>右键点击<code>测试计划</code> -&gt; <code>添加</code> -&gt; <code>Threads(Users)</code> -&gt; <code>线程组</code></li>
+<li>线程组参数详解：
+<ol type="1">
+<li><code>线程数</code>：虚拟用户数。一个虚拟用户占用一个进程或线程。设置多少虚拟用户数在这里也就是设置多少个线程数。</li>
+<li><code>Ramp-Up Period(in seconds)</code>准备时长：设置的虚拟用户数需要多长时间全部启动。如果线程数为10，准备时长为2，那么需要2秒钟启动10个线程，也就是每秒钟启动5个线程。</li>
+<li><code>循环次数</code>：每个线程发送请求的次数。如果线程数为10，循环次数为100，那么每个线程发送100次请求。总请求数为10*100=1000 。如果勾选了“永远”，那么所有线程会一直发送请求，一到选择停止运行脚本。</li>
+<li><code>Delay Thread creation until needed</code>：直到需要时延迟线程的创建。</li>
+<li><code>调度器</code>：设置线程组启动的开始时间和结束时间(配置调度器时，需要勾选循环次数为永远)
+<ul>
+<li><code>持续时间</code>（秒）：测试持续时间，会覆盖结束时间</li>
+<li><code>启动延迟</code>（秒）：测试延迟启动时间，会覆盖启动时间</li>
+<li><code>启动时间</code>：测试启动时间，启动延迟会覆盖它。当启动时间已过，手动只需测试时当前时间也会覆盖它。</li>
+<li><code>结束时间</code>：测试结束时间，持续时间会覆盖它。</li>
+</ul></li>
+</ol></li>
+</ul>
+<h2 id="添加http请求">添加HTTP请求</h2>
+<ul>
+<li>右键点击<code>线程组</code> -&gt; <code>添加</code> -&gt; <code>Sampler</code> -&gt; <code>HTTP请求</code></li>
+<li>Http请求主要参数详解：
+<ol type="1">
+<li>Web服务器 <code>协议</code>：向目标服务器发送HTTP请求协议，可以是HTTP或HTTPS，默认为HTTP <code>服务器名称或IP</code> ：HTTP请求发送的目标服务器名称或IP <code>端口号</code>：目标服务器的端口号，默认值为80</li>
+<li>Http请求 <code>方法</code>：发送HTTP请求的方法，可用方法包括<code>GET、POST、HEAD、PUT、OPTIONS、TRACE、DELETE</code>等。 <code>路径</code>：目标URL路径（URL中去掉服务器地址、端口及参数后剩余部分） <code>Content encoding</code> ：编码方式，默认为ISO-8859-1编码，这里配置为utf-8</li>
+<li>同请求一起发送参数 在请求中发送的URL参数，用户可以将URL中所有参数设置在本表中，表中每行为一个参数（对应URL中的 <code>name=value</code>），注意参数传入中文时需要勾选“编码”</li>
+</ol></li>
+</ul>
+<h2 id="添加查看结果数">添加查看结果数</h2>
+<ul>
+<li>右键点击<code>线程组</code> -&gt; <code>添加</code> -&gt; <code>监听器</code> -&gt; <code>察看结果树</code></li>
+<li>运行Http请求，修改响应数据格式为<code>HTML Source Formatted</code></li>
+</ul>
+<h2 id="添加用户自定义变量">添加用户自定义变量</h2>
+<ul>
+<li>可以添加用户自定义变量用以Http请求参数化，右键点击<code>线程组</code>-&gt; <code>添加</code> -&gt; <code>配置元件</code> -&gt; <code>用户定义的变量</code></li>
+<li>新增一个参数wd，存放搜索词,并在Http请求中使用该参数，格式为：${wd}</li>
+</ul>
+<h2 id="添加断言">添加断言</h2>
+<ul>
+<li>右键点击<code>HTTP请求</code> -&gt; <code>添加</code>-&gt; <code>断言</code> -&gt; <code>响应断言</code></li>
+<li>校验返回的文本中是否包含搜索词，添加参数${wd}到要测试的模式中</li>
+</ul>
+<h2 id="添加断言结果">添加断言结果</h2>
+<ul>
+<li>右键点击<code>HTTP请求</code> -&gt; <code>添加</code>-&gt; <code>监听器</code> -&gt; <code>断言结果</code></li>
+</ul>
+<h2 id="添加聚合报告">添加聚合报告</h2>
+<ul>
+<li>右键点击<code>线程组</code> -&gt; <code>添加</code> -&gt; <code>监听器</code> -&gt; <code>聚合报告</code>，用以存放性能测试报告 # 执行性能测试 ## 配置线程组</li>
+<li>点击线程组，配置本次性能测试相关参数：<code>线程数</code>，<code>循环次数</code>，<code>持续时间</code>等，这里我们配置并发用户数为10，持续时间为60s</li>
+</ul>
+<h2 id="执行测试">执行测试</h2>
+<ul>
+<li>点击<code>绿色小箭头</code>按钮即可<code>启动测试</code>，测试之前需要点击<code>小扫把按钮</code>清除之前的调试结果。</li>
+</ul>
+<h1 id="分析测试报告">分析测试报告</h1>
+<h2 id="聚合报告参数详解">聚合报告参数详解</h2>
+<ol type="1">
+<li><code>Label</code>：每个 JMeter 的 element（例如 HTTP Request）都有一个 Name 属性，这里显示的就是 Name 属性的值</li>
+<li><code>#Samples</code>：请求数——表示这次测试中一共发出了多少个请求，如果模拟10个用户，每个用户迭代10次，那么这里显示100</li>
+<li><code>Average</code>：平均响应时间——默认情况下是单个 Request 的平均响应时间，当使用了 Transaction Controller 时，以Transaction 为单位显示平均响应时间</li>
+<li><code>Median</code>：中位数，也就是 50％ 用户的响应时间</li>
+<li><code>90% Line</code>：90％ 用户的响应时间</li>
+<li><code>Min</code>：最小响应时间</li>
+<li><code>Max</code>：最大响应时间</li>
+<li><code>Error%</code>：错误率——错误请求数/请求总数</li>
+<li><code>Throughput</code>：吞吐量——默认情况下表示每秒完成的请求数（Request per Second），当使用了 <code>Transaction Controller</code> 时，也可以表示类似 LoadRunner 的 Transaction per Second 数</li>
+<li><code>KB/Sec</code>：每秒从服务器端接收到的数据量，相当于LoadRunner中的Throughput/Sec</li>
+</ol>
+<h2 id="性能测试中我们需要重点关注的数据">性能测试中我们需要重点关注的数据</h2>
+<ul>
+<li><code>#Samples</code> 请求数，<code>Average</code> 平均响应时间，<code>Min</code> 最小响应时间，<code>Max</code> 最大响应时间，<code>Error%</code> 错误率及<code>Throughput</code> 吞吐量。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>压力测试</category>
+      </categories>
+      <tags>
+        <tag>压力测试</tag>
+        <tag>JMeter</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring Security</title>
     <url>//post/spring-security/</url>
-    <content><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Spring Security是一个强大且高度可定制的认证和访问控制框架。它是保护基于Spring的应用程序的事实标准。</p>
+    <content><![CDATA[<h1 id="简介">简介</h1>
+<p>Spring Security是一个强大且高度可定制的认证和访问控制框架。它是保护基于Spring的应用程序的事实标准。</p>
 <a id="more"></a>
-
 <p>Spring Security是一个专注于为Java应用提供认证和授权的框架。像所有的Spring项目一样，Spring Security的真正强大之处在于它可以很容易地被扩展以满足客户的要求。</p>
-<h1 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h1><ul>
+<h1 id="快速上手">快速上手</h1>
+<ul>
 <li><a href="https://spring.io/guides/gs/securing-web/">官方快速入门</a></li>
 </ul>
-<h1 id="使用篇"><a href="#使用篇" class="headerlink" title="使用篇"></a>使用篇</h1><ol>
+<h1 id="使用篇">使用篇</h1>
+<ol type="1">
 <li>环境搭建</li>
 <li>Spring Security 基础</li>
 </ol>
-<h1 id="开发篇"><a href="#开发篇" class="headerlink" title="开发篇"></a>开发篇</h1><ol>
+<h1 id="开发篇">开发篇</h1>
+<ol type="1">
 <li>密码的进化和验证</li>
 <li>深入 Spring Security 认证</li>
 <li>构建基于 JWT 的认证</li>
@@ -191,14 +388,17 @@
 <li>实现符合 OAuth 2 标准的授权服务器</li>
 <li>Spring Security 更多了解</li>
 </ol>
-<h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><ul>
+<h1 id="api">API</h1>
+<ul>
 <li><a href="https://docs.spring.io/spring-security/site/docs/current/reference/html5/">官方参考文档</a></li>
 <li><a href="https://docs.spring.io/spring-security/site/docs/current/api/">官方 API 文档</a></li>
 </ul>
-<h1 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h1><ul>
+<h1 id="faq">FAQ</h1>
+<ul>
 <li>略</li>
 </ul>
-<h1 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h1><ul>
+<h1 id="附录">附录</h1>
+<ul>
 <li>名词解释</li>
 <li>最佳实践</li>
 </ul>
