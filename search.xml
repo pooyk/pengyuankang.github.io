@@ -1,6 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>格式验证页</title>
+    <url>//post/demo/</url>
+    <content><![CDATA[<p>格式验证页</p>
+<a id="more"></a>
+<h1 id="hexo">Hexo</h1>
+<h2 id="引用块">引用块</h2>
+<p>在文章中插入引言，可包含作者、来源和标题。</p>
+<p><strong>没有提供参数，则只输出普通的 blockquote</strong></p>
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
+</blockquote>
+<p><strong>引用书上的句子</strong></p>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+<p><strong>引用 Twitter</strong></p>
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. http://devdocs.io</p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
+<p><strong>引用网络上的文章</strong></p>
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote>
+<h2 id="代码块">代码块</h2>
+<p>在文章中插入代码。</p>
+<p><strong>普通的代码块</strong></p>
+<figure class="highlight isbl"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">&#x27;Hello World!&#x27;</span>);</span></span><br></pre></td></tr></table></figure>
+<p><strong>指定语言</strong></p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
+<p><strong>附加说明</strong></p>
+<figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</span><br></pre></td></tr></table></figure>
+<p><strong>附加说明和网址</strong></p>
+<figure class="highlight excel"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="code"><pre><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, &#x27;&#x27;, <span class="number">3</span>]);</span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
+<p><strong>反引号代码块</strong></p>
+<p><code>[language] [title] [url] [link text] code snippet</code></p>
+<h2 id="pull-quote">Pull Quote</h2>
+<ul>
+<li><div class="line-block">primary | success | info | warning |</div></li>
+</ul>
+<blockquote class="pullquote warning"><p>content</p>
+</blockquote>
+<h2 id="include-code">Include Code</h2>
+<figure class="highlight java"><figcaption><span>ClaimAccessor.java</span><a href="/downloads/code/ClaimAccessor.java">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">default</span> String <span class="title">getClaimAsString</span><span class="params">(String claim)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">this</span>.containsClaim(claim)) {</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    }</span><br><span class="line">    Object claimValue = <span class="keyword">this</span>.getClaims().get(claim);</span><br><span class="line">    <span class="keyword">return</span> (claimValue != <span class="keyword">null</span> ? claimValue.toString() : <span class="keyword">null</span>);</span><br></pre></td></tr></table></figure>
+<h1 id="next"><a href="https://theme-next.js.org/docs/">Next</a></h1>
+<ul>
+<li>ab</li>
+</ul>
+<div class="tabs" id="first-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#first-unique-name-1">First unique name 1</a></li><li class="tab"><a href="#first-unique-name-2">First unique name 2</a></li><li class="tab"><a href="#first-unique-name-3">First unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
+<h1 id="latex-math">LaTex Math</h1>
+<h2 id="内联与块状">内联与块状</h2>
+<ul>
+<li>内联</li>
+</ul>
+<p>函数式：<span class="math inline">\(f(x)=\frac{P(x)}{Q(x)}\)</span></p>
+<ul>
+<li>块状</li>
+</ul>
+<p><span class="math display">\[
+f(x)=\frac{P(x)}{Q(x)}
+\]</span></p>
+<h2 id="latex-math的基本语法">LaTex Math的基本语法</h2>
+<ul>
+<li><p>希腊字母 <span class="math inline">\(\Gamma\)</span> <span class="math inline">\(\iota\)</span> <span class="math inline">\(\sigma\)</span> <span class="math inline">\(\phi\)</span> <span class="math inline">\(\upsilon\)</span> <span class="math inline">\(\Pi\)</span> <span class="math inline">\(\Bbbk\)</span> <span class="math inline">\(\heartsuit\)</span> <span class="math inline">\(\int\)</span> <span class="math inline">\(\oint\)</span></p></li>
+<li><p>三角函数 <span class="math inline">\(\tan\)</span> <span class="math inline">\(\sin\)</span> <span class="math inline">\(\cos\)</span></p></li>
+<li><p>运算符 <span class="math inline">\(+\)</span><span class="math inline">\(-\)</span><span class="math inline">\(=\)</span><span class="math inline">\(&gt;\)</span><span class="math inline">\(&lt;\)</span><span class="math inline">\(\times\)</span><span class="math inline">\(\div\)</span><span class="math inline">\(\equiv\)</span><span class="math inline">\(\leq\)</span><span class="math inline">\(\geq\)</span><span class="math inline">\(\neq\)</span></p></li>
+<li><p>集合符号</p>
+<p><span class="math inline">\(\cup\)</span> <span class="math inline">\(\cap\)</span> <span class="math inline">\(\in\)</span> <span class="math inline">\(\notin\)</span> <span class="math inline">\(\ni\)</span> <span class="math inline">\(\subset\)</span> <span class="math inline">\(\subseteq\)</span> <span class="math inline">\(\supset\)</span> <span class="math inline">\(\supseteq\)</span> <span class="math inline">\(\infty\)</span></p></li>
+<li><p>指数输出</p>
+<p><span class="math inline">\(x^3+x^9\)</span> <span class="math inline">\(x^y\)</span></p></li>
+<li><p>n次方根输出</p>
+<p><span class="math inline">\(\sqrt{3x-1}+\sqrt[5]{2y^5-4}\)</span></p></li>
+<li><p>输出分数 <span class="math display">\[
+\frac{x}{2y} +\frac{x-y}{x+y}
+\]</span></p></li>
+<li><p>累加求和输出 <span class="math display">\[
+\sum_{n=1}^\infty k
+\]</span></p></li>
+<li><p>极限的输出 <span class="math display">\[
+\lim\limits_{x \to \infty} \exp(-x) = 0
+\]</span></p></li>
+<li><p>输出矩阵 <span class="math display">\[
+\begin{matrix}
+   1 &amp; 2 &amp; 3 \\
+   4 &amp; 5 &amp; 6 \\
+   7 &amp; 8 &amp; 9
+  \end{matrix}
+\]</span></p></li>
+</ul>
+<h2 id="复杂数学公式">复杂数学公式</h2>
+<ul>
+<li><p>多行等式 <span class="math display">\[
+\begin{equation} \label{eq2}
+\begin{aligned}
+a &amp;= b + c \\
+  &amp;= d + e + f + g \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}
+\]</span></p></li>
+<li><p>多行方程 <span class="math display">\[
+\begin{align}
+-4 + 5x &amp;= 2 + y \nonumber \\
+w + 2 &amp;= -1 + w \\
+ab &amp;= cb
+\end{align}
+\]</span></p></li>
+<li><p>分段函数的编写 <span class="math display">\[
+X(m,n)=
+\begin{cases}
+x(n), \\
+x(n-1) \\
+x(n-1)
+\end{cases}
+\]</span></p></li>
+<li><p>全微分等式 <span class="math display">\[
+\frac{\partial u}{\partial t}
+= h^2 \left( \frac{\partial^2 u}{\partial x^2} +
+\frac{\partial^2 u}{\partial y^2} +
+\frac{\partial^2 u}{\partial z^2}\right)
+\tag{i}
+\]</span></p></li>
+</ul>
+<h1 id="markdown">Markdown</h1>
+<ul>
+<li>折叠</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Theme Page</category>
+        <category>Demo</category>
+      </categories>
+  </entry>
+  <entry>
     <title>算法</title>
     <url>//post/algorithm/</url>
     <content><![CDATA[<p>算法主页</p>
@@ -27,6 +156,35 @@
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设计模式</title>
+    <url>//post/design-pattern/</url>
+    <content><![CDATA[<p>设计模式主页</p>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>Theme Page</category>
+        <category>软件工程</category>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>设计模式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java</title>
+    <url>//post/java/</url>
+    <content><![CDATA[<p>Java主页</p>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>Theme Page</category>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>
@@ -118,6 +276,21 @@
       <tags>
         <tag>测试</tag>
         <tag>JMeter</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Framework</title>
+    <url>//post/spring-framework/</url>
+    <content><![CDATA[<p>Spring Framework 主页</p>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>Theme Page</category>
+        <category>Spring</category>
+        <category>Spring Framework</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
@@ -249,21 +422,6 @@
       </tags>
   </entry>
   <entry>
-    <title>设计模式</title>
-    <url>//post/design-pattern/</url>
-    <content><![CDATA[<p>设计模式主页</p>
-<a id="more"></a>
-]]></content>
-      <categories>
-        <category>Theme Page</category>
-        <category>软件工程</category>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>设计模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Spring Security</title>
     <url>//post/spring-security/</url>
     <content><![CDATA[<h1 id="简介">简介</h1>
@@ -312,164 +470,6 @@
       <tags>
         <tag>Spring</tag>
         <tag>Security</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>格式验证页</title>
-    <url>//post/demo/</url>
-    <content><![CDATA[<p>格式验证页</p>
-<a id="more"></a>
-<h1 id="hexo">Hexo</h1>
-<h2 id="引用块">引用块</h2>
-<p>在文章中插入引言，可包含作者、来源和标题。</p>
-<p><strong>没有提供参数，则只输出普通的 blockquote</strong></p>
-<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
-</blockquote>
-<p><strong>引用书上的句子</strong></p>
-<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
-<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
-<p><strong>引用 Twitter</strong></p>
-<blockquote><p>NEW: DevDocs now comes with syntax highlighting. http://devdocs.io</p>
-<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752">twitter.com/devdocs/status/356095192085962752</a></cite></footer></blockquote>
-<p><strong>引用网络上的文章</strong></p>
-<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
-<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html">Welcome to Island Marketing</a></cite></footer></blockquote>
-<h2 id="代码块">代码块</h2>
-<p>在文章中插入代码。</p>
-<p><strong>普通的代码块</strong></p>
-<figure class="highlight isbl"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="title">alert</span>(<span class="string">&#x27;Hello World!&#x27;</span>);</span></span><br></pre></td></tr></table></figure>
-<p><strong>指定语言</strong></p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</span><br></pre></td></tr></table></figure>
-<p><strong>附加说明</strong></p>
-<figure class="highlight cpp"><figcaption><span>Array.map</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="built_in">array</span>.<span class="built_in">map</span>(callback[, thisArg])</span><br></pre></td></tr></table></figure>
-<p><strong>附加说明和网址</strong></p>
-<figure class="highlight excel"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact">Underscore.js</a></figcaption><table><tr><td class="code"><pre><span class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="built_in">false</span>, <span class="number">2</span>, &#x27;&#x27;, <span class="number">3</span>]);</span><br><span class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<p><strong>反引号代码块</strong></p>
-<p><code>[language] [title] [url] [link text] code snippet</code></p>
-<h2 id="pull-quote">Pull Quote</h2>
-<ul>
-<li><div class="line-block">primary | success | info | warning |</div></li>
-</ul>
-<blockquote class="pullquote warning"><p>content</p>
-</blockquote>
-<h2 id="include-code">Include Code</h2>
-<figure class="highlight java"><figcaption><span>ClaimAccessor.java</span><a href="/downloads/code/ClaimAccessor.java">view raw</a></figcaption><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">default</span> String <span class="title">getClaimAsString</span><span class="params">(String claim)</span> </span>{</span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">this</span>.containsClaim(claim)) {</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    }</span><br><span class="line">    Object claimValue = <span class="keyword">this</span>.getClaims().get(claim);</span><br><span class="line">    <span class="keyword">return</span> (claimValue != <span class="keyword">null</span> ? claimValue.toString() : <span class="keyword">null</span>);</span><br></pre></td></tr></table></figure>
-<h1 id="next"><a href="https://theme-next.js.org/docs/">Next</a></h1>
-<ul>
-<li>ab</li>
-</ul>
-<div class="tabs" id="first-unique-name"><ul class="nav-tabs"><li class="tab active"><a href="#first-unique-name-1">First unique name 1</a></li><li class="tab"><a href="#first-unique-name-2">First unique name 2</a></li><li class="tab"><a href="#first-unique-name-3">First unique name 3</a></li></ul><div class="tab-content"><div class="tab-pane active" id="first-unique-name-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="first-unique-name-2"><p><strong>This is Tab 2.</strong></p></div><div class="tab-pane" id="first-unique-name-3"><p><strong>This is Tab 3.</strong></p></div></div></div>
-<h1 id="latex-math">LaTex Math</h1>
-<h2 id="内联与块状">内联与块状</h2>
-<ul>
-<li>内联</li>
-</ul>
-<p>函数式：<span class="math inline">\(f(x)=\frac{P(x)}{Q(x)}\)</span></p>
-<ul>
-<li>块状</li>
-</ul>
-<p><span class="math display">\[
-f(x)=\frac{P(x)}{Q(x)}
-\]</span></p>
-<h2 id="latex-math的基本语法">LaTex Math的基本语法</h2>
-<ul>
-<li><p>希腊字母 <span class="math inline">\(\Gamma\)</span> <span class="math inline">\(\iota\)</span> <span class="math inline">\(\sigma\)</span> <span class="math inline">\(\phi\)</span> <span class="math inline">\(\upsilon\)</span> <span class="math inline">\(\Pi\)</span> <span class="math inline">\(\Bbbk\)</span> <span class="math inline">\(\heartsuit\)</span> <span class="math inline">\(\int\)</span> <span class="math inline">\(\oint\)</span></p></li>
-<li><p>三角函数 <span class="math inline">\(\tan\)</span> <span class="math inline">\(\sin\)</span> <span class="math inline">\(\cos\)</span></p></li>
-<li><p>运算符 <span class="math inline">\(+\)</span><span class="math inline">\(-\)</span><span class="math inline">\(=\)</span><span class="math inline">\(&gt;\)</span><span class="math inline">\(&lt;\)</span><span class="math inline">\(\times\)</span><span class="math inline">\(\div\)</span><span class="math inline">\(\equiv\)</span><span class="math inline">\(\leq\)</span><span class="math inline">\(\geq\)</span><span class="math inline">\(\neq\)</span></p></li>
-<li><p>集合符号</p>
-<p><span class="math inline">\(\cup\)</span> <span class="math inline">\(\cap\)</span> <span class="math inline">\(\in\)</span> <span class="math inline">\(\notin\)</span> <span class="math inline">\(\ni\)</span> <span class="math inline">\(\subset\)</span> <span class="math inline">\(\subseteq\)</span> <span class="math inline">\(\supset\)</span> <span class="math inline">\(\supseteq\)</span> <span class="math inline">\(\infty\)</span></p></li>
-<li><p>指数输出</p>
-<p><span class="math inline">\(x^3+x^9\)</span> <span class="math inline">\(x^y\)</span></p></li>
-<li><p>n次方根输出</p>
-<p><span class="math inline">\(\sqrt{3x-1}+\sqrt[5]{2y^5-4}\)</span></p></li>
-<li><p>输出分数 <span class="math display">\[
-\frac{x}{2y} +\frac{x-y}{x+y}
-\]</span></p></li>
-<li><p>累加求和输出 <span class="math display">\[
-\sum_{n=1}^\infty k
-\]</span></p></li>
-<li><p>极限的输出 <span class="math display">\[
-\lim\limits_{x \to \infty} \exp(-x) = 0
-\]</span></p></li>
-<li><p>输出矩阵 <span class="math display">\[
-\begin{matrix}
-   1 &amp; 2 &amp; 3 \\
-   4 &amp; 5 &amp; 6 \\
-   7 &amp; 8 &amp; 9
-  \end{matrix}
-\]</span></p></li>
-</ul>
-<h2 id="复杂数学公式">复杂数学公式</h2>
-<ul>
-<li><p>多行等式 <span class="math display">\[
-\begin{equation} \label{eq2}
-\begin{aligned}
-a &amp;= b + c \\
-  &amp;= d + e + f + g \\
-  &amp;= h + i
-\end{aligned}
-\end{equation}
-\]</span></p></li>
-<li><p>多行方程 <span class="math display">\[
-\begin{align}
--4 + 5x &amp;= 2 + y \nonumber \\
-w + 2 &amp;= -1 + w \\
-ab &amp;= cb
-\end{align}
-\]</span></p></li>
-<li><p>分段函数的编写 <span class="math display">\[
-X(m,n)=
-\begin{cases}
-x(n), \\
-x(n-1) \\
-x(n-1)
-\end{cases}
-\]</span></p></li>
-<li><p>全微分等式 <span class="math display">\[
-\frac{\partial u}{\partial t}
-= h^2 \left( \frac{\partial^2 u}{\partial x^2} +
-\frac{\partial^2 u}{\partial y^2} +
-\frac{\partial^2 u}{\partial z^2}\right)
-\tag{i}
-\]</span></p></li>
-</ul>
-<h1 id="markdown">Markdown</h1>
-<ul>
-<li>折叠</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Theme Page</category>
-        <category>Demo</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Spring Framework</title>
-    <url>//post/spring-framework/</url>
-    <content><![CDATA[<p>Spring Framework 主页</p>
-<a id="more"></a>
-]]></content>
-      <categories>
-        <category>Theme Page</category>
-        <category>Spring</category>
-        <category>Spring Framework</category>
-      </categories>
-      <tags>
-        <tag>Spring</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java</title>
-    <url>//post/java/</url>
-    <content><![CDATA[<p>Java主页</p>
-<a id="more"></a>
-]]></content>
-      <categories>
-        <category>Theme Page</category>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
       </tags>
   </entry>
 </search>
