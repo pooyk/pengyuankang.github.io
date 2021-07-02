@@ -109,14 +109,7 @@
   </url>
   
   <url>
-    <loc>https://kang.icu/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2021-07-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kang.icu/tags/JMeter/</loc>
+    <loc>https://kang.icu/tags/%E9%87%8D%E6%9E%84/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -130,7 +123,14 @@
   </url>
   
   <url>
-    <loc>https://kang.icu/tags/%E9%87%8D%E6%9E%84/</loc>
+    <loc>https://kang.icu/tags/%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2021-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kang.icu/tags/JMeter/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -153,13 +153,6 @@
   </url>
   
   <url>
-    <loc>https://kang.icu/categories/Theme-Page/Demo/</loc>
-    <lastmod>2021-07-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://kang.icu/categories/Theme-Page/Java/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
@@ -174,14 +167,21 @@
   </url>
   
   <url>
-    <loc>https://kang.icu/categories/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://kang.icu/categories/Theme-Page/%E9%87%8D%E6%9E%84/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://kang.icu/categories/Theme-Page/%E9%87%8D%E6%9E%84/</loc>
+    <loc>https://kang.icu/categories/Theme-Page/Demo/</loc>
+    <lastmod>2021-07-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kang.icu/categories/%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
