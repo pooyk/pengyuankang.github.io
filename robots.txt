@@ -10,5 +10,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 
-Sitemap: https://pengyuankang.github.io/sitemap.xml
-Sitemap: https://pengyuankang.github.io/baidusitemap.xml
+Sitemap: https://kang.icu/sitemap.xml
+Sitemap: https://kang.icu/baidusitemap.xml
